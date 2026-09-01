@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: memory-efficient-gpt
+Version: 0.1.0
+Summary: Memory-efficient techniques for GPT models
+Home-page: https://github.com/sundai-research/memory-efficient-gpt
+Author: Sundai Research
+Author-email: info@sundai-research.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: torch>=2.0.0
+Requires-Dist: transformers>=4.30.0
+Requires-Dist: peft>=0.4.0
+Requires-Dist: bitsandbytes>=0.39.0
+Requires-Dist: fastapi>=0.95.0
+Requires-Dist: uvicorn>=0.22.0
+Requires-Dist: pydantic>=1.10.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Provides-Extra: flash
+Requires-Dist: flash-attn>=2.0.0; extra == "flash"
+Provides-Extra: deepspeed
+Requires-Dist: deepspeed>=0.9.0; extra == "deepspeed"
+Provides-Extra: vllm
+Requires-Dist: vllm>=0.1.0; extra == "vllm"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
